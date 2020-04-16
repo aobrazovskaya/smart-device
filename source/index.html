@@ -5,21 +5,26 @@
   <meta charset="utf-8">
   <title>Smart Device</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/roboto-condensed-v18-latin-regular.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-v18-latin-300.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-condensed-v18-latin-700.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="preload" href="fonts/pt-mono-v7-latin-regular.woff2" as="font">
 </head>
 
 <body>
-  <header class="header">
-    <a class="header__logo">
-      <img src="img/logo.png" width="202" height="52" alt="Логотип Smart Device">
-    </a>
-    <nav class="header__nav"></nav>
-    <a class="header__email" href="mailto:info@sd.ru">info@sd.ru</a>
-    <a class="header__tel" href="tel:+74950005252">+7 (495) 000 52 52</a>
-    <button class="header__button">Заказать звонок</button>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/logo.png" width="202" height="52" alt="Логотип Smart Device">
+      </a>
+      <nav class="page-header__nav"></nav>
+      <ul class="page-header__contact-us contact-us">
+        <li class="contact-us__item">
+          <a class="contact-us__email" href="mailto:info@sd.ru"><span>info@sd.ru</span></a>
+        </li>
+        <li class="contact-us__item"><a class="contact-us__tel" href="tel:+74950005252">+7 (495) 000 52 52</a></li>
+        <li class="contact-us__item"><button class="contact-us__button">Заказать звонок</button></li>
+      </ul>
+    </div>
   </header>
   <main class="main">
     <div class="main-screen">

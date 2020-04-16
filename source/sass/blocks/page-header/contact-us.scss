@@ -1,0 +1,65 @@
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us__item {
+  position: relative;
+  list-style: none;
+
+  a {
+    font-family: $secondary-font;
+    color: $font-color-light;
+  }
+}
+
+.contact-us__email,
+.contact-us__tel {
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+  }
+}
+
+.contact-us__email {
+  margin-right: 88px;
+  padding-left: 40px;
+
+  &::before {
+    background-image: url("../../img/envelope.svg");
+    width: 19px;
+    height: 14px;
+  }
+}
+
+.contact-us__tel {
+  margin-right: 49px;
+  padding-left: 34px;
+
+  &::before {
+    background-image: url("../../img/phone-call.svg");
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.contact-us__button {
+  padding: 14px 28px;
+  border-radius: 5px;
+  border: 1px solid $font-color-light;
+
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-family: $primary-font;
+  color: $font-color-light;
+  background-color: transparent;
+}
