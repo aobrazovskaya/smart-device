@@ -3,58 +3,68 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Smart Device</title>
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="preload" href="fonts/pt-mono-v7-latin-regular.woff2" as="font">
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <img src="img/logo.png" width="202" height="52" alt="Логотип Smart Device">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+          <img src="img/logo.svg" alt="Логотип Smart Device">
+        </picture>
       </a>
       <nav class="page-header__nav"></nav>
       <ul class="page-header__contact-us contact-us">
-        <li class="contact-us__item">
+        <li class="contact-us__item contact-us__item--email">
           <a class="contact-us__email" href="mailto:info@sd.ru"><span>info@sd.ru</span></a>
         </li>
-        <li class="contact-us__item"><a class="contact-us__tel" href="tel:+74950005252">+7 (495) 000 52 52</a></li>
-        <li class="contact-us__item"><button class="contact-us__button">Заказать звонок</button></li>
+        <li class="contact-us__item contact-us__item--tel">
+          <a class="contact-us__tel" href="tel:+74950005252"><span>+7 (495) 000 52 52</span></a>
+        </li>
       </ul>
+      <button class="page-header__button">Заказать звонок</button>
     </div>
   </header>
   <main class="main">
     <div class="main-screen">
-      <h1 class="main-screen__title">Печатные платы</h1>
+      <h1>Печатные платы</h1>
       <p class="main-screen__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <button class="main-screen__button">Получить бесплатную консультацию</button>
       <a>Скролл вниз</a>
     </div>
     <section class="advantages">
-      <h2 class="advantages__title">Преимущества</h2>
+      <h2>Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantage">
-          <h3 class="advantage__title">Оперативные сроки</h3>
+          <h3>Оперативные сроки</h3>
           <p class="advantage__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
             производить и доставлять
             заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="advantage">
-          <h3 class="advantage__title">Крупные поставщики</h3>
+          <h3>Крупные поставщики</h3>
           <p class="advantage__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
             HOLGLITRONIC, REFOND.
             Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
           </p>
         </li>
         <li class="advantage">
-          <h3 class="advantage__title">Полная конфиденциальность</h3>
+          <h3>Полная конфиденциальность</h3>
           <p class="advantage__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="advantage">
-          <h3 class="advantage__title">Персонализация стоимости</h3>
+          <h3>Персонализация стоимости</h3>
           <p class="advantage__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
             цену, которая Вас
             устраивает.</p>
@@ -62,7 +72,7 @@
       </ul>
     </section>
     <section class="about-company">
-      <h2 class="about-company__title">О компании</h2>
+      <h2>О компании</h2>
       <p class="about-company__paragraph about-company__paragraph--first">Мы поставляем электронные комплектующие,
         производим печатные платы и предоставляем мировые технологии с 1997
         года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>

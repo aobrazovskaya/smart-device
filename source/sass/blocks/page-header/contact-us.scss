@@ -1,65 +1,99 @@
 .contact-us {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   margin: 0;
+  margin-left: auto;
+  margin-right: 49px;
   padding: 0;
 }
 
+@media (max-width: $tablet-width) {
+  .contact-us {
+    margin-right: 0;
+  }
+}
+
 .contact-us__item {
-  position: relative;
   list-style: none;
 
   a {
     font-family: $secondary-font;
     color: $font-color-light;
   }
+
+  &--email {
+    margin-right: 88px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contact-us__item--email {
+    margin-right: 59px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact-us__item--email {
+    margin-right: 48px;
+  }
 }
 
 .contact-us__email,
 .contact-us__tel {
+  display: flex;
+
   &::before {
-    position: absolute;
     content: "";
+    background-size: 100%;
     display: inline-block;
-    top: 0;
-    left: 0;
   }
 }
 
 .contact-us__email {
-  margin-right: 88px;
-  padding-left: 40px;
-
   &::before {
+    margin-right: 20px;
     background-image: url("../../img/envelope.svg");
+    background-repeat: no-repeat;
     width: 19px;
     height: 14px;
   }
 }
 
-.contact-us__tel {
-  margin-right: 49px;
-  padding-left: 34px;
+@media (max-width: $tablet-width) {
+  .contact-us__email {
+    span {
+      display: none;
+    }
 
+    &::before {
+      margin-right: -25px;
+      width: 25.33px;
+      height: 18.67px;
+    }
+  }
+}
+
+.contact-us__tel {
   &::before {
+    margin-right: 16px;
     background-image: url("../../img/phone-call.svg");
+    background-repeat: no-repeat;
     width: 18px;
     height: 18px;
   }
 }
 
-.contact-us__button {
-  padding: 14px 28px;
-  border-radius: 5px;
-  border: 1px solid $font-color-light;
+@media (max-width: $tablet-width) {
+  .contact-us__tel {
+    span {
+      display: none;
+    }
 
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  font-family: $primary-font;
-  color: $font-color-light;
-  background-color: transparent;
+    &::before {
+      margin-right: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
