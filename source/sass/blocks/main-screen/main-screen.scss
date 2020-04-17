@@ -1,0 +1,71 @@
+.main-screen {
+  margin-top: -118px;
+  width: 100%;
+
+  background-image: url('../../../img/background.png');
+
+  h1 {
+    margin: 203px 0 36px -4px;
+
+    color: $font-color-light;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 5.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.main-screen__wrapper {
+  margin: 0 auto;
+  padding: 118px 0 193px 100px;
+
+  width: 84%;
+  background-image: url('../../../img/printed-circuit-boards.png');
+  background-repeat: no-repeat;
+  background-position: 884px 258px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen__wrapper {
+    width: 100%;
+  }
+}
+
+.main-screen__text {
+  position: relative;
+  margin: 0 0 40px 0;
+  padding-left: 93px;
+
+  width: 50%;
+  color: $font-color-light;
+  line-height: 35px;
+  font-family: $secondary-font;
+  font-size: 22px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    display: inline-block;
+
+    width: 66px;
+    height: 2px;
+    background-color: $font-color-light;
+  }
+}
+
+.main-screen__button {
+  margin-left: 93px;
+  margin-bottom: 85px;
+  padding: 19px 46px;
+
+  color: $font-color-light;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  border-radius: 5px;
+  border: none;
+
+  background-color: $main-color;
+}
