@@ -1,0 +1,48 @@
+.about-company {
+  margin: 0 auto 50px;
+  padding-left: 210px;
+  padding-bottom: 40px;
+
+  width: 64%;
+  color: $font-grey;
+
+  background-image: url('../../../img/2005.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  h2 {
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 41px;
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  button {
+    padding: 14px 52px;
+
+    color: $main-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: $font-color-light;
+    border: 1px solid $main-color;
+    border-radius: 5px;
+  }
+}
+
+.about-company__paragraph {
+  margin: 0;
+  width: 96%;
+
+  line-height: 21px;
+  font-family: $secondary-font;
+
+  &--first {
+    padding-bottom: 22px;
+  }
+
+  &--second {
+    padding-bottom: 40px;
+  }
+}
+
