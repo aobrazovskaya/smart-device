@@ -6,7 +6,7 @@
   width: 64%;
   color: $font-grey;
 
-  background-image: url('../../../img/2005.png');
+  background-image: url("../../../img/2005.png");
   background-repeat: no-repeat;
   background-position: top left;
 
@@ -23,10 +23,56 @@
 
     color: $main-color;
     font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     background-color: $font-color-light;
     border: 1px solid $main-color;
     border-radius: 5px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    width: 100%;
+
+    background-image: url("../../../img/2005-medium.png");
+
+    h2 {
+      padding-top: 12px;
+      padding-bottom: 31px;
+      font-size: 32px;
+    }
+
+    button {
+      margin-left: 4px
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company {
+    padding-left: 15px;
+    background-image: none;
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company__paragraph-wrapper {
+    margin-bottom: 40px;
+
+    max-height: 195px;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company__paragraph-wrapper {
+    margin-bottom: 25px;
+    max-height: 350px;
   }
 }
 
@@ -46,3 +92,18 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .about-company__paragraph {
+    padding-left: 2px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company__paragraph {
+    line-height: 22px;
+
+    &--first {
+      padding-bottom: 38px;
+    }
+  }
+}
