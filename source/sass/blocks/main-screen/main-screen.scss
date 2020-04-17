@@ -2,7 +2,9 @@
   margin-top: -118px;
   width: 100%;
 
-  background-image: url('../../../img/background.png');
+  background-image: url("../../../img/background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 
   h1 {
     margin: 203px 0 36px -4px;
@@ -16,19 +18,79 @@
   }
 }
 
-.main-screen__wrapper {
-  margin: 0 auto;
-  padding: 118px 0 193px 100px;
+@media (max-width: $tablet-width) {
+  .main-screen {
+    margin-top: -97px;
+    background-image: url("../../../img/background-medium.png");
 
-  width: 84%;
-  background-image: url('../../../img/printed-circuit-boards.png');
+    h1 {
+      margin-top: 73px;
+      margin-bottom: 28px;
+
+      width: 47%;
+      font-size: 60px;
+      letter-spacing: 4.5px;
+      line-height: 72px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen {
+    margin-top: -85px;
+    background-image: url("../../../img/background-small.png");
+
+    h1 {
+      margin-top: 221px;
+      margin-left: 2px;
+      margin-bottom: 26px;
+
+      width: 100%;
+      font-size: 40px;
+      letter-spacing: 3px;
+      line-height: 47px;
+    }
+  }
+}
+
+.main-screen__wrapper {
+  width: 100%;
+
+  background-image: url("../../../img/printed-circuit-boards.png");
   background-repeat: no-repeat;
-  background-position: 884px 258px;
+  background-position: 1038px 258px;
 }
 
 @media (max-width: $tablet-width) {
   .main-screen__wrapper {
-    width: 100%;
+    background-image: url("../../../img/printed-circuit-boards-medium.png");
+    background-position: 510px 118px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen__wrapper {
+    background-image: url("../../../img/printed-circuit-boards-small.png");
+    background-position: 26px 105px;
+  }
+}
+
+.main-screen__content {
+  margin: 0 auto;
+  padding: 118px 0 144px;
+  width: 73.6%;
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen__content {
+    width: 76%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen__content {
+    padding-top: 78px;
+    width: 92%;
   }
 }
 
@@ -44,7 +106,7 @@
   font-size: 22px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 16px;
     left: 0px;
@@ -53,6 +115,38 @@
     width: 66px;
     height: 2px;
     background-color: $font-color-light;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen__text {
+    margin-right: 0;
+    margin-bottom: 56px;
+    padding-left: 47px;
+
+    width: 73%;
+    font-size: 18px;
+    line-height: 27px;
+
+    &::before {
+      width: 33px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen__text {
+    width: 100%;
+    margin-bottom: 42px;
+    padding-left: 53px;
+
+    font-size: 16px;
+    line-height: 25px;
+
+    &::before {
+      top: 17px;
+      left: 6px;
+    }
   }
 }
 
@@ -68,4 +162,47 @@
   border: none;
 
   background-color: $main-color;
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen__button {
+    margin-left: 46px;
+    margin-bottom: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen__button {
+    margin-left: 4px;
+  }
+}
+
+.main-screen__button-text--mobile {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen__button-text {
+    &--mobile {
+      display: inline-block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  #scroll-down {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  #scroll-down {
+    display: none;
+  }
 }
