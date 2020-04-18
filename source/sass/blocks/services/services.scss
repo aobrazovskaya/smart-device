@@ -1,0 +1,144 @@
+.services {
+  background-color: $dark-background;
+}
+
+.services__wrapper {
+  margin: 0 auto;
+  padding: 70px 0 100px;
+  width: 60.93%;
+
+  color: $font-color-light;
+
+  p {
+    margin-bottom: 70px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__wrapper {
+    padding-top: 18px;
+    padding-bottom: 34px;
+    width: 92.93%;
+
+    p {
+      margin-bottom: 50px;
+      width: 87%;
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services__wrapper {
+    padding-top: 20px;
+    padding-bottom: 34px;
+
+    width: 90.93%;
+
+    p {
+      margin-bottom: 40px;
+      padding-left: 10px;
+      width: 100%;
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  a {
+    font-size: 20px;
+    color: $font-color-light;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    margin-top: -584px;
+    padding: 13px 155px 0px 44px;
+
+    line-height: 30px;
+  }
+
+  img {
+    width: 370px;
+    height: 620px;
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__list {
+    span {
+      margin-top: -228px;
+      width: 50%;
+    }
+
+    img {
+      width: 715px;
+      height: 256px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services__list {
+    span {
+      padding-left: 35px;
+      padding-right: 0;
+      margin-top: -248px;
+
+      width: 71%;
+    }
+  }
+}
+
+.services__item {
+  margin-bottom: 46px;
+  position: relative;
+  width: 370px;
+  min-height: 620px;
+
+  &::after {
+    content: ">";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 63px;
+    height: 63px;
+    color: $font-color-light;
+
+    background-color: $main-color;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__item {
+    margin-right: auto;
+    margin-left: auto;
+    width: 720px;
+    min-height: 256px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services__item {
+    width: 290px;
+    margin-bottom: 31px;
+  }
+}

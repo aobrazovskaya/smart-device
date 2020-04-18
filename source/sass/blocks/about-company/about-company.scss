@@ -1,5 +1,5 @@
 .about-company {
-  margin: 74px auto 50px;
+  margin: 74px auto 68px;
   padding-left: 210px;
   padding-bottom: 40px;
 
@@ -34,6 +34,7 @@
 @media (max-width: $tablet-width) {
   .about-company {
     margin-top: 27px;
+    margin-bottom: 42px;
     width: 100%;
 
     background-image: url("../../../img/2005-medium.png");
@@ -53,6 +54,7 @@
 @media (max-width: $mobile-width) {
   .about-company {
     margin-top: 38px;
+    margin-bottom: 26px;
     padding-left: 15px;
     background-image: none;
 
