@@ -1,9 +1,11 @@
 .main-screen {
+  width: 100%;
   margin-top: -118px;
 
   background-image: url("../../../img/background.png");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100%;
 
   h1 {
     margin: 203px 0 36px -4px;

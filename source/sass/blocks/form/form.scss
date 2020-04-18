@@ -1,0 +1,104 @@
+.form {
+  padding-bottom: 50px;
+  color: $font-color-light;
+  background-image: url('../../../img/form.png');
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 27px 100px 14px;
+
+    width: 50%;
+  }
+
+  input,
+  textarea {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 17px;
+
+    border: none;
+    background-color: $input-background;
+
+  }
+
+  input::placeholder {
+    color: $font-color-light;
+  }
+
+  input[name="name"] {
+    width: 48%;
+  }
+
+  input[name="tel"] {
+    width: 47%;
+  }
+
+  textarea {
+    margin-top: 40px;
+    margin-bottom: 44px;
+    width: 100%;
+    min-height: 154px;
+    color: $font-color-light;
+  }
+
+  button {
+    padding: 14px 85px;
+    color: $font-color-light;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid $font-color-light;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  input[type="checkbox"] {
+    font-size: 14px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+  width: 64%;
+  padding-top: 108px;
+
+  background-image: url("../../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
+  background-position: top 160px left;
+  background-repeat: no-repeat;
+
+  p {
+    margin: 0;
+  }
+}
+
+.form__header {
+  padding-bottom: 30px;
+  font-size: 36px;
+}
+
+.form__text {
+  padding-bottom: 50px;
+  font-family: $secondary-font;
+}
+
+.form__terms {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 16px;
+  width: 46.2%;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $font-color-light;
+  }
+}
