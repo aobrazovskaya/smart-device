@@ -1,0 +1,125 @@
+.advantages {
+  margin: 0 auto;
+  padding-top: 113px;
+  width: 60.94%;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    width: 93.5%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    width: 90.6%;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantage {
+  margin-bottom: 34px;
+  padding: 40px 42px;
+
+  width: 48%;
+  min-height: 299px;
+  border: 1px solid $border-color;
+  border-left: 3px solid $main-color;
+
+  h3 {
+    margin: 0;
+    padding: 23px 0;
+
+    font-size: 24px;
+    color: $main-color;
+  }
+
+  p {
+    margin: 0;
+
+    font-family: $secondary-font;
+    color: $font-grey;
+    line-height: 22px;
+  }
+
+  &:hover {
+    background-color: $main-color;
+
+    h3,
+    p {
+      color: $font-color-light;
+    }
+
+    svg {
+      fill: $font-color-light;
+    }
+  }
+
+  &--confidentiality svg {
+    width: 36px;
+    height: 31px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantage {
+    margin-bottom: 28px;
+    padding: 23px 20px 23px 25px;
+
+    min-height: 232px;
+
+    h3 {
+      padding-top: 12px;
+      padding-bottom: 15px;
+    }
+
+    &--suppliers svg {
+      width: 32.18px;
+    }
+
+    &--confidentiality svg {
+      width: 30.31px;
+      height: 26.1px;
+    }
+
+    &--cost svg {
+      width: 32.18px;
+      height: 32.18px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantage {
+    margin-bottom: 22px;
+    padding-right: 15px;
+
+    width: 100%;
+
+    h3 {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &--suppliers {
+      padding-right: 10px;
+    }
+
+    &--confidentiality svg {
+      width: 30.2px;
+      height: 26.1px;
+    }
+  }
+}
