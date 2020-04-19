@@ -1,5 +1,5 @@
 .form {
-  padding-bottom: 50px;
+  padding-bottom: 12px;
   color: $font-color-light;
   background-image: url('../../../img/form.png');
 
@@ -19,6 +19,7 @@
     padding-bottom: 17px;
 
     border: none;
+    letter-spacing: 1.3px;
     background-color: $input-background;
 
   }
@@ -37,20 +38,21 @@
 
   textarea {
     margin-top: 40px;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
     width: 100%;
     min-height: 154px;
     color: $font-color-light;
   }
 
   button {
-    padding: 14px 85px;
+    padding: 14px 80px;
     color: $font-color-light;
     font-size: 14px;
     text-transform: uppercase;
     border: 1px solid $font-color-light;
     border-radius: 5px;
     background-color: transparent;
+    letter-spacing: 0.7px;
   }
 
   input[type="checkbox"] {
@@ -67,7 +69,7 @@
   padding-top: 108px;
 
   background-image: url("../../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
-  background-position: top 160px left;
+  background-position: top 163px left;
   background-repeat: no-repeat;
 
   p {
@@ -76,29 +78,38 @@
 }
 
 .form__header {
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   font-size: 36px;
 }
 
 .form__text {
-  padding-bottom: 50px;
+  padding-bottom: 54px;
   font-family: $secondary-font;
 }
 
 .form__terms {
   position: relative;
   padding-top: 8px;
-  padding-left: 16px;
+  padding-left: 32px;
+
   width: 46.2%;
+  font-size: 14px;
+  font-family: $secondary-font;
 
   input {
+    display: none;
+  }
+
+  &::before {
+    content: '';
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
 
     width: 16px;
     height: 16px;
     background-color: transparent;
     border: 1px solid $font-color-light;
+
   }
 }

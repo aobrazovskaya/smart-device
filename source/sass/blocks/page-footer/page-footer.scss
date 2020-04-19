@@ -1,8 +1,20 @@
-.page-footer__sections {
+@import "./info.scss";
+@import "./copyright.scss";
+
+.page-footer {
+  font-size: 15px;
+  color: $footer-text-color;
+
+  h2 {
+    margin-top: 0;
+    font-size: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
   ul {
+    margin: 0;
     padding: 0;
     list-style: none;
-
-    columns: 2;
   }
 }
