@@ -48,7 +48,7 @@
             <span class="main-screen__button-text main-screen__button-text--mobile">Бесплатная консультация</span>
           </button>
         </div>
-        <a id="scroll-down">Скролл вниз</a>
+        <a id="scroll-down" class="visually-hidden">Скролл вниз</a>
       </div>
     </section>
     <section class="advantages">
@@ -187,14 +187,17 @@
         <form>
           <p class="form__header">Остались вопросы? Задайте их нам!</p>
           <p class="form__text">Мы проконсультируем Вас бесплатно</p>
-          <input placeholder="Имя" name="name">
-          <input placeholder="Телефон" name="tel">
-          <textarea name="question">Ваш вопрос</textarea>
-          <button type="submit">Задать вопрос</button>
-          <label class="form__terms">
-            <input type="checkbox">
-            Я согласен на обработку персональных данных
-          </label>
+          <div class="form__fields">
+            <input placeholder="Имя" name="name">
+            <input placeholder="Телефон" name="tel">
+            <textarea name="question">Ваш вопрос</textarea>
+            <button type="submit">Задать вопрос</button>
+            <label class="form__terms">
+              <input class="visually-hidden" type="checkbox" class="vi">
+              <span class="checkbox-container"></span>
+              <span>Я согласен на обработку персональных данных</span>
+            </label>
+          </div>
         </form>
       </div>
     </section>

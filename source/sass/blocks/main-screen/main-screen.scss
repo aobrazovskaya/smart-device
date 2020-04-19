@@ -23,6 +23,7 @@
   .main-screen {
     margin-top: -97px;
     background-image: url("../../../img/background-medium.png");
+    background-size: auto;
 
     h1 {
       margin-top: 73px;
@@ -78,12 +79,13 @@
 
 .main-screen__content {
   margin: 0 auto;
-  padding: 118px 0 144px;
+  padding: 118px 0 190px;
   width: 73.6%;
 }
 
 @media (max-width: $tablet-width) {
   .main-screen__content {
+    padding-bottom: 162px;
     width: 76%;
   }
 }
@@ -91,6 +93,7 @@
 @media (max-width: $mobile-width) {
   .main-screen__content {
     padding-top: 78px;
+    padding-bottom: 68px;
     width: 92%;
   }
 }

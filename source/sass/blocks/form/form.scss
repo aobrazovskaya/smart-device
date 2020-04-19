@@ -1,16 +1,105 @@
 .form {
   padding-bottom: 12px;
   color: $font-color-light;
-  background-image: url('../../../img/form.png');
+  background-image: url("../../../img/form.png");
 
   form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 27px 100px 14px;
-
+    padding: 0 30px 100px 11px;
     width: 50%;
   }
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    padding-bottom: 6px;
+    background-color: $main-color;
+    background-image: none;
+
+    form {
+      padding-right: 10px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form form{
+    padding-bottom: 32px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 auto;
+  width: 64%;
+  padding-top: 95px;
+
+  background-image: url("../../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
+  background-position: top 163px left;
+  background-repeat: no-repeat;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form__wrapper {
+    align-items: center;
+    padding-top: 80px;
+    width: 80%;
+    background: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form__wrapper {
+    padding-top: 28px;
+    width: 97%;
+  }
+}
+
+.form__header {
+  padding-bottom: 17px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .form__header {
+    padding-bottom: 22px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form__header {
+    padding-bottom: 15px;
+    font-size: 28px;
+  }
+}
+
+.form__text {
+  padding-left: 5px;
+  padding-bottom: 54px;
+  font-family: $secondary-font;
+}
+
+@media (max-width: $mobile-width) {
+  .form__text {
+    padding-left: 0;
+    padding-bottom: 34px;
+  }
+}
+
+.form__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-left: 4px;
 
   input,
   textarea {
@@ -21,7 +110,6 @@
     border: none;
     letter-spacing: 1.3px;
     background-color: $input-background;
-
   }
 
   input::placeholder {
@@ -45,7 +133,7 @@
   }
 
   button {
-    padding: 14px 80px;
+    padding: 13px 80px;
     color: $font-color-light;
     font-size: 14px;
     text-transform: uppercase;
@@ -54,62 +142,92 @@
     background-color: transparent;
     letter-spacing: 0.7px;
   }
+}
 
-  input[type="checkbox"] {
-    font-size: 14px;
+@media (max-width: $tablet-width) {
+  .form__fields {
+    input,
+    textarea {
+      padding-top: 17px;
+    }
+
+    input[name="name"] {
+      width: 47%;
+    }
+
+    textarea {
+      min-height: 165px;
+    }
+
+    button {
+      padding-right: 85px;
+      padding-left: 85px;
+    }
   }
 }
 
-.form__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0 auto;
-  width: 64%;
-  padding-top: 108px;
+@media (max-width: $mobile-width) {
+  .form__fields {
+    padding-left: 0;
 
-  background-image: url("../../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
-  background-position: top 163px left;
-  background-repeat: no-repeat;
+    input,
+    textarea {
+      padding-top: 12px;
+    }
 
-  p {
-    margin: 0;
+    input[name="name"] {
+      margin-bottom: 36px;
+      width: 100%;
+    }
+
+    input[name="tel"] {
+      width: 100%;
+    }
+
+    textarea {
+      margin-top: 32px;
+      margin-bottom: 30px;
+      min-height: 104px;
+    }
+
+    button {
+      margin-bottom: 24px;
+      padding-right: 89px;
+      padding-left: 89px;
+    }
   }
-}
-
-.form__header {
-  padding-bottom: 27px;
-  font-size: 36px;
-}
-
-.form__text {
-  padding-bottom: 54px;
-  font-family: $secondary-font;
 }
 
 .form__terms {
   position: relative;
   padding-top: 8px;
-  padding-left: 32px;
+  display: flex;
 
   width: 46.2%;
   font-size: 14px;
   font-family: $secondary-font;
 
-  input {
-    display: none;
+  input:checked ~ .checkbox-container {
+    background-image: url("../../../img/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 0;
-
+  .checkbox-container {
+    margin-right: 17px;
     width: 16px;
     height: 16px;
-    background-color: transparent;
     border: 1px solid $font-color-light;
+    flex-shrink: 0;
+  }
 
+  span {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form__terms {
+    width: 100%;
   }
 }
