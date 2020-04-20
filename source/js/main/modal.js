@@ -1,12 +1,10 @@
 (function () {
-  let orderCall = document.querySelector('.order-call');
+  var orderCall = document.querySelector('.order-call');
 
-  let modal = document.querySelector('.modal-overlay');
-  let closeButton = modal.querySelector('.form__close-button');
-
-  let nameInput = document.querySelector('input[name="name"]');
-
-  let modalElements = document.querySelectorAll('.form__fields > [name]');
+  var modal = document.querySelector('.modal-overlay');
+  var closeButton = modal.querySelector('.form__close-button');
+  var nameInput = document.querySelector('input[name="name"]');
+  var modalElements = document.querySelectorAll('.form__fields > [name]');
 
   orderCall.addEventListener('click', function (event) {
     event.preventDefault();
