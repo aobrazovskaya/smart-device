@@ -1,0 +1,68 @@
+.modal {
+  position: absolute;
+  top: 13.5%;
+  left: 50%;
+
+  margin-left: -245px;
+  padding: 30px 40px;
+  width: 490px;
+  min-height: 605px;
+
+  color: $font-color-light;
+  background-color: $main-color;
+
+  .form__header {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .form__text {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-bottom: 35px;
+  }
+
+  .form__fields {
+    padding: 0;
+
+    input,
+    textarea {
+      padding-top: 12px;
+    }
+
+    input[name="name"] {
+      margin-bottom: 36px;
+      width: 100%;
+    }
+
+    input[name="tel"] {
+      width: 100%;
+    }
+
+    textarea {
+      margin-top: 32px;
+      margin-bottom: 34px;
+      min-height: 104px;
+    }
+
+    button {
+      margin-bottom: 28px;
+      width: 100%;
+    }
+
+    label {
+      width: 98%;
+    }
+  }
+
+  .checkbox-container {
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .modal {
+    display: none;
+  }
+}
