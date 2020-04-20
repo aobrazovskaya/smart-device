@@ -108,17 +108,18 @@
     padding-left: 15px;
     padding-bottom: 17px;
 
+    color: $font-color-light;
     border: none;
     letter-spacing: 1.3px;
     background-color: $input-background;
 
     &:focus {
       outline: none;
-      color: $font-color-light;
     }
   }
 
-  input::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     color: $font-color-light;
   }
 
@@ -136,6 +137,7 @@
     width: 100%;
     min-height: 154px;
     color: $font-color-light;
+    resize: none;
   }
 
   button {
@@ -236,4 +238,14 @@
   .form__terms {
     width: 100%;
   }
+}
+
+.form__close-button {
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  border: none;
+  background-color: transparent;
 }

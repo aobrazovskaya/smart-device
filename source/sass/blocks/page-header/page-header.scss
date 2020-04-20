@@ -1,8 +1,10 @@
 @import "./contact-us.scss";
 
 .page-header {
+  position: absolute;
   display: flex;
   width: 100%;
+  z-index: 1;
 }
 
 .page-header__wrapper {
@@ -33,7 +35,7 @@
 
 .page-header__button {
   margin: 3px 0;
-  padding: 0 28px;
+  padding: 13px 28px;
   border-radius: 5px;
   border: 1px solid $font-color-light;
 
