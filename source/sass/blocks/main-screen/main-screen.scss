@@ -77,8 +77,9 @@
 }
 
 .main-screen__content {
+  position: relative;
   margin: 0 auto;
-  padding: 118px 0 190px;
+  padding: 118px 0 292px;
   width: 73.6%;
 }
 
@@ -99,7 +100,7 @@
 
 .main-screen__text {
   position: relative;
-  margin: 0 0 40px 0;
+  margin: 0 0 60px;
   padding-left: 93px;
 
   width: 50%;
@@ -198,14 +199,16 @@
   }
 }
 
-@media (max-width: $tablet-width) {
-  #scroll-down {
-    display: none;
-  }
+.main-screen__scroll-down {
+  position: absolute;
+  top: 740px;
+  left: 11.4%;
+  transform: rotate(0.75turn);
+  color: $font-color-light;
 }
 
-@media (max-width: $mobile-width) {
-  #scroll-down {
+@media (max-width: $tablet-width) {
+  .main-screen__scroll-down {
     display: none;
   }
 }

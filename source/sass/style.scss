@@ -16,3 +16,11 @@
   background-size: 125%;
   background-position: top 878px center;
 }
+
+@media (max-width: $tablet-width) {
+  .main {
+    background-image: url('../img/background-light-tablet.png');
+    background-position: top 691px right -391px;
+    background-size: 189%;
+  }
+}

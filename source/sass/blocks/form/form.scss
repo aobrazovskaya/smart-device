@@ -111,6 +111,11 @@
     border: none;
     letter-spacing: 1.3px;
     background-color: $input-background;
+
+    &:focus {
+      outline: none;
+      color: $font-color-light;
+    }
   }
 
   input::placeholder {
