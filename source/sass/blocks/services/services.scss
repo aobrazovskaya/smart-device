@@ -110,7 +110,7 @@
   width: 370px;
   min-height: 620px;
 
-  &::after {
+  a::after {
     content: ">";
     display: flex;
     justify-content: center;
