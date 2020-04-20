@@ -9,3 +9,10 @@
 @import "./blocks/services/services.scss";
 @import "./blocks/form/form.scss";
 @import "./blocks/page-footer/page-footer.scss";
+
+.main {
+  background-image: url('../img/background-light-desktop.png');
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: top 878px center;
+}

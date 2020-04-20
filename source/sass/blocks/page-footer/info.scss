@@ -131,10 +131,21 @@
 
 @media (max-width: $mobile-width) {
   .page-footer__sections {
-    padding-top: 28px;
-    padding-left: 15px;
-    padding-bottom: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 28px 15px 22px;
     width: 100%;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .accordeon__content {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -169,11 +180,28 @@
 
 @media (max-width: $mobile-width) {
   .page-footer__address {
-    padding-top: 28px;
-    padding-left: 15px;
-    padding-bottom: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 28px 15px 22px;
 
     width: 100%;
     border-top: 1px solid $line-color;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .accordeon__content {
+      margin-top: 30px;
+    }
+
+    address {
+      margin-bottom: 3px;
+      width: 98%;
+      line-height: 26px;
+    }
   }
 }

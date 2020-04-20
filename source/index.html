@@ -36,6 +36,7 @@
       <button class="page-header__button">Заказать звонок</button>
     </div>
   </header>
+
   <main class="main">
     <section class="main-screen">
       <div class="main-screen__wrapper">
@@ -51,6 +52,7 @@
         <a id="scroll-down" class="visually-hidden">Скролл вниз</a>
       </div>
     </section>
+
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
@@ -127,6 +129,7 @@
         </li>
       </ul>
     </section>
+
     <section class="about-company">
       <h2>О компании</h2>
       <div class="about-company__paragraph-wrapper">
@@ -238,7 +241,9 @@
         </div>
         <div class="page-footer__sections">
           <h2>Разделы сайта</h2>
-          <ul>
+          <input class="accordeon__control visually-hidden" id="accordeon-sections" type="checkbox">
+          <label class="accordeon__label" for="accordeon-sections"></label>
+          <ul class="accordeon__content">
             <li>О компании</li>
             <li>Продукты</li>
             <li>Производство печатных плат</li>
@@ -250,10 +255,14 @@
         </div>
         <div class="page-footer__address">
           <h2>Наш офис</h2>
-          <address>г. Мытищи, Олимпийский проспект, д.10</address>
-          <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-          <a href="tel:+79250038767">+7 (925) 003-87-67</a>
-          <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+          <input class="accordeon__control visually-hidden" id="accordeon-address" type="checkbox">
+          <label class="accordeon__label" for="accordeon-address"></label>
+          <div class="accordeon__content">
+            <address>г. Мытищи, Олимпийский проспект, д.10</address>
+            <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+            <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+          </div>
         </div>
       </div>
       <div class="page-footer__copyright copyright">
