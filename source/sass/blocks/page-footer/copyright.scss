@@ -1,5 +1,5 @@
 .copyright {
-  border-top: 1px solid #626962;
+  border-top: 1px solid $line-color;
   text-transform: uppercase;
   font-size: 13px;
   font-family: $secondary-font;
@@ -13,19 +13,30 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 17px 15px 17px 12px;
+  padding: 19px 15px 17px 12px;
   width: 75%;
 }
 
-.copyright__info {
-  display: flex;
-  width: 57.7%;
+@media (max-width: $tablet-width) {
+  .copyright__wrapper {
+    padding: 23px 28px;
+    width: 100%;
 
-  span:first-child {
-    margin-right: 9%;
+    span:first-child {
+      display: none;
+    }
   }
+}
 
-  span:last-child {
-    margin-left: auto;
+@media (max-width: $mobile-width) {
+  .copyright__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    span:last-child {
+      margin-top: 28px;
+    }
   }
 }

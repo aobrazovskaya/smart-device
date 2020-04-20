@@ -7,11 +7,77 @@
   width: 75%;
 }
 
+@media (max-width: $tablet-width) {
+  .page-footer__info {
+    flex-wrap: wrap;
+    padding-top: 19px;
+    padding-bottom: 26px;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__info {
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+}
+
 .page-footer__col-wrapper {
   padding-left: 12px;
   width: 25%;
+
   img {
+    width: 216px;
+    height: 52px;
     margin-bottom: 55px;
+  }
+
+  span {
+    position: absolute;
+    left: 477px;
+    bottom: 17px;
+
+    font-family: $secondary-font;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+    padding: 0 25px 25px;
+    width: 100%;
+
+    border-bottom: 1px solid $line-color;
+
+    img {
+      margin-bottom: 0;
+    }
+
+    span {
+      position: static;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__col-wrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    span {
+      margin-bottom: 34px;
+    }
   }
 }
 
@@ -20,6 +86,16 @@
 
   li {
     margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__social {
+    align-items: flex-end;
   }
 }
 
@@ -38,7 +114,27 @@
   }
 
   li {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__sections {
+    padding-left: 26px;
+    width: 50%;
+
+    ul {
+      columns: 1;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__sections {
+    padding-top: 28px;
+    padding-left: 15px;
+    padding-bottom: 22px;
+    width: 100%;
   }
 }
 
@@ -61,5 +157,23 @@
     margin-bottom: 6px;
     display: block;
     color: $footer-text-color;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__address {
+    padding-left: 16px;
+    width: 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__address {
+    padding-top: 28px;
+    padding-left: 15px;
+    padding-bottom: 22px;
+
+    width: 100%;
+    border-top: 1px solid $line-color;
   }
 }

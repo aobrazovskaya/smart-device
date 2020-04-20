@@ -11,20 +11,21 @@
 
 @media (max-width: $tablet-width) {
   .form {
-    padding-bottom: 6px;
+    padding-bottom: 74px;
     background-color: $main-color;
     background-image: none;
 
     form {
       padding-right: 10px;
+      padding-bottom: 32px;
       width: 100%;
     }
   }
 }
 
-@media (max-width: $tablet-width) {
-  .form form{
-    padding-bottom: 32px;
+@media (max-width: $mobile-width) {
+  .form {
+    padding-bottom: 8px;
   }
 }
 
