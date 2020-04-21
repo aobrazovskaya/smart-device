@@ -1,16 +1,25 @@
 .contact-us {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   margin: 0;
   margin-left: auto;
-  margin-right: 49px;
+  margin-right: 3.5%;
   padding: 0;
+  width: 430px;
 }
 
 @media (max-width: $tablet-width) {
   .contact-us {
     margin-right: 0;
+    width: 83px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact-us {
+    width: 72px;
   }
 }
 
@@ -20,10 +29,6 @@
   a {
     font-family: $secondary-font;
     color: $font-color-light;
-  }
-
-  &--email {
-    margin-right: 88px;
   }
 }
 

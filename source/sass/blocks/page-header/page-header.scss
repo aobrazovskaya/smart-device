@@ -11,6 +11,7 @@
 .page-header__wrapper {
   margin: 33px auto;
   display: flex;
+  align-items: center;
 
   width: 73.49%;
 }
@@ -35,11 +36,14 @@
 }
 
 .page-header__button {
-  margin: 3px 0;
-  padding: 13px 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+  height: 45px;
   border-radius: 5px;
   border: 1px solid $font-color-light;
-
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;

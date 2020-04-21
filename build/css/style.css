@@ -371,22 +371,27 @@ button:hover {
 .contact-us {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
   margin-left: auto;
-  margin-right: 49px;
-  padding: 0; }
+  margin-right: 3.5%;
+  padding: 0;
+  width: 430px; }
 
 @media (max-width: 1023px) {
   .contact-us {
-    margin-right: 0; } }
+    margin-right: 0;
+    width: 83px; } }
+
+@media (max-width: 767px) {
+  .contact-us {
+    width: 72px; } }
 
 .contact-us__item {
   list-style: none; }
   .contact-us__item a {
     font-family: "PT Mono", courier, monospace;
     color: #ffffff; }
-  .contact-us__item--email {
-    margin-right: 88px; }
 
 @media (max-width: 1023px) {
   .contact-us__item--email {
@@ -446,6 +451,7 @@ button:hover {
 .page-header__wrapper {
   margin: 33px auto;
   display: flex;
+  align-items: center;
   width: 73.49%; }
 
 @media (max-width: 1023px) {
@@ -462,8 +468,11 @@ button:hover {
       height: 38px; } }
 
 .page-header__button {
-  margin: 3px 0;
-  padding: 13px 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 45px;
   border-radius: 5px;
   border: 1px solid #ffffff;
   font-size: 14px;
@@ -498,7 +507,7 @@ button:hover {
   .main-screen {
     background-image: url("../img/background-medium.png"); }
     .main-screen h1 {
-      margin-top: 73px;
+      margin-top: 68px;
       margin-bottom: 28px;
       width: 47%;
       font-size: 60px;
@@ -509,7 +518,7 @@ button:hover {
   .main-screen {
     background-image: url("../img/background-small.png"); }
     .main-screen h1 {
-      margin-top: 221px;
+      margin-top: 208px;
       margin-left: 2px;
       margin-bottom: 26px;
       width: 100%;
@@ -531,7 +540,7 @@ button:hover {
 @media (max-width: 767px) {
   .main-screen__wrapper {
     background-image: url("../img/printed-circuit-boards-small.png");
-    background-position: 26px 105px; } }
+    background-position: 26px 91px; } }
 
 .main-screen__content {
   position: relative;
@@ -541,13 +550,13 @@ button:hover {
 
 @media (max-width: 1023px) {
   .main-screen__content {
-    padding-bottom: 162px;
+    padding-bottom: 182px;
     width: 76%; } }
 
 @media (max-width: 767px) {
   .main-screen__content {
     padding-top: 78px;
-    padding-bottom: 68px;
+    padding-bottom: 88px;
     width: 92%; } }
 
 .main-screen__text {
@@ -573,7 +582,7 @@ button:hover {
 @media (max-width: 1023px) {
   .main-screen__text {
     margin-right: 0;
-    margin-bottom: 56px;
+    margin-bottom: 75px;
     padding-left: 47px;
     width: 73%;
     font-size: 18px;
@@ -584,7 +593,7 @@ button:hover {
 @media (max-width: 767px) {
   .main-screen__text {
     width: 100%;
-    margin-bottom: 42px;
+    margin-bottom: 60px;
     padding-left: 53px;
     font-size: 16px;
     line-height: 25px; }
@@ -628,10 +637,11 @@ button:hover {
 
 .main-screen__scroll-down {
   position: absolute;
-  top: 740px;
-  left: 11.4%;
+  top: 735px;
+  left: 11.1%;
   transform: rotate(0.75turn);
-  color: #ffffff; }
+  color: #ffffff;
+  letter-spacing: 1.1px; }
 
 @media (max-width: 1023px) {
   .main-screen__scroll-down {
@@ -783,7 +793,7 @@ button:hover {
 
 @media (max-width: 1023px) {
   .about-company__paragraph-wrapper {
-    margin-bottom: 40px; }
+    margin-bottom: 46px; }
     .about-company__paragraph-wrapper p {
       padding-left: 2px; } }
 

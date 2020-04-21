@@ -24,7 +24,7 @@
     background-image: url("../img/background-medium.png");
 
     h1 {
-      margin-top: 73px;
+      margin-top: 68px;
       margin-bottom: 28px;
 
       width: 47%;
@@ -40,7 +40,7 @@
     background-image: url("../img/background-small.png");
 
     h1 {
-      margin-top: 221px;
+      margin-top: 208px;
       margin-left: 2px;
       margin-bottom: 26px;
 
@@ -70,7 +70,7 @@
 @media (max-width: $mobile-width) {
   .main-screen__wrapper {
     background-image: url("../img/printed-circuit-boards-small.png");
-    background-position: 26px 105px;
+    background-position: 26px 91px;
   }
 }
 
@@ -83,7 +83,7 @@
 
 @media (max-width: $tablet-width) {
   .main-screen__content {
-    padding-bottom: 162px;
+    padding-bottom: 182px;
     width: 76%;
   }
 }
@@ -91,7 +91,7 @@
 @media (max-width: $mobile-width) {
   .main-screen__content {
     padding-top: 78px;
-    padding-bottom: 68px;
+    padding-bottom: 88px;
     width: 92%;
   }
 }
@@ -124,7 +124,7 @@
 @media (max-width: $tablet-width) {
   .main-screen__text {
     margin-right: 0;
-    margin-bottom: 56px;
+    margin-bottom: 75px;
     padding-left: 47px;
 
     width: 73%;
@@ -140,7 +140,7 @@
 @media (max-width: $mobile-width) {
   .main-screen__text {
     width: 100%;
-    margin-bottom: 42px;
+    margin-bottom: 60px;
     padding-left: 53px;
 
     font-size: 16px;
@@ -205,10 +205,11 @@
 
 .main-screen__scroll-down {
   position: absolute;
-  top: 740px;
-  left: 11.4%;
+  top: 735px;
+  left: 11.1%;
   transform: rotate(0.75turn);
   color: $font-color-light;
+  letter-spacing: 1.1px;
 }
 
 @media (max-width: $tablet-width) {
