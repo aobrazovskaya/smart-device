@@ -659,6 +659,7 @@ button:hover {
     margin: 0;
     padding: 23px 0;
     font-size: 24px;
+    font-weight: normal;
     color: #00B2FF; }
   .advantage p {
     margin: 0;
