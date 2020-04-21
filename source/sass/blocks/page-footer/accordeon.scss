@@ -3,12 +3,12 @@
     width: 16px;
     height: 16px;
 
-    background-image: url('../../../img/plus.svg');
+    background-image: url('../img/plus.svg');
   }
 
   .accordeon__control:checked ~ .accordeon__label {
     height: 2px;
-    background-image: url('../../../img/minus.svg');
+    background-image: url('../img/minus.svg');
   }
 
   .accordeon__control:checked ~ .accordeon__content {

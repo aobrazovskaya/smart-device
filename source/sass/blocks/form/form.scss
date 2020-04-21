@@ -1,7 +1,7 @@
 .form {
   padding-bottom: 12px;
   color: $font-color-light;
-  background-image: url("../../../img/form.png");
+  background-image: url("../img/form.png");
   background-color: $main-color;
 
   form {
@@ -38,7 +38,7 @@
   width: 64%;
   padding-top: 95px;
 
-  background-image: url("../../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
+  background-image: url("../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
   background-position: top 163px left;
   background-repeat: no-repeat;
 
@@ -224,7 +224,7 @@
   font-family: $secondary-font;
 
   input:checked ~ .checkbox-container {
-    background-image: url("../../../img/Vector.svg");
+    background-image: url("../img/Vector.svg");
     background-repeat: no-repeat;
     background-position: 50%;
   }

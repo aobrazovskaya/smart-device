@@ -408,7 +408,7 @@ button:hover {
 
 .contact-us__email::before {
   margin-right: 20px;
-  background-image: url("../../img/envelope.svg");
+  background-image: url("../img/envelope.svg");
   background-repeat: no-repeat;
   width: 19px;
   height: 14px; }
@@ -423,7 +423,7 @@ button:hover {
 
 .contact-us__tel::before {
   margin-right: 16px;
-  background-image: url("../../img/phone-call.svg");
+  background-image: url("../img/phone-call.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px; }
@@ -480,7 +480,7 @@ button:hover {
 
 .main-screen {
   width: 100%;
-  background-image: url("../../../img/background.png");
+  background-image: url("../img/background.png");
   background-color: #1B2D37;
   background-position: top center;
   background-repeat: no-repeat;
@@ -496,7 +496,7 @@ button:hover {
 
 @media (max-width: 1023px) {
   .main-screen {
-    background-image: url("../../../img/background-medium.png"); }
+    background-image: url("../img/background-medium.png"); }
     .main-screen h1 {
       margin-top: 73px;
       margin-bottom: 28px;
@@ -507,7 +507,7 @@ button:hover {
 
 @media (max-width: 767px) {
   .main-screen {
-    background-image: url("../../../img/background-small.png"); }
+    background-image: url("../img/background-small.png"); }
     .main-screen h1 {
       margin-top: 221px;
       margin-left: 2px;
@@ -519,18 +519,18 @@ button:hover {
 
 .main-screen__wrapper {
   width: 100%;
-  background-image: url("../../../img/printed-circuit-boards.png");
+  background-image: url("../img/printed-circuit-boards.png");
   background-repeat: no-repeat;
   background-position: 1038px 258px; }
 
 @media (max-width: 1023px) {
   .main-screen__wrapper {
-    background-image: url("../../../img/printed-circuit-boards-medium.png");
+    background-image: url("../img/printed-circuit-boards-medium.png");
     background-position: 510px 118px; } }
 
 @media (max-width: 767px) {
   .main-screen__wrapper {
-    background-image: url("../../../img/printed-circuit-boards-small.png");
+    background-image: url("../img/printed-circuit-boards-small.png");
     background-position: 26px 105px; } }
 
 .main-screen__content {
@@ -729,7 +729,7 @@ button:hover {
   padding-bottom: 40px;
   width: 64%;
   color: #666666;
-  background-image: url("../../../img/2005.png");
+  background-image: url("../img/2005.png");
   background-repeat: no-repeat;
   background-position: top left; }
   .about-company h2 {
@@ -753,7 +753,7 @@ button:hover {
     margin-top: 27px;
     margin-bottom: 44px;
     width: 100%;
-    background-image: url("../../../img/2005-medium.png"); }
+    background-image: url("../img/2005-medium.png"); }
     .about-company h2 {
       padding-top: 12px;
       padding-bottom: 42px;
@@ -901,7 +901,7 @@ button:hover {
 .form {
   padding-bottom: 12px;
   color: #ffffff;
-  background-image: url("../../../img/form.png");
+  background-image: url("../img/form.png");
   background-color: #00B2FF; }
   .form form {
     padding: 0 30px 100px 11px;
@@ -928,7 +928,7 @@ button:hover {
   margin: 0 auto;
   width: 64%;
   padding-top: 95px;
-  background-image: url("../../../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
+  background-image: url("../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
   background-position: top 163px left;
   background-repeat: no-repeat; }
   .form__wrapper p {
@@ -1065,7 +1065,7 @@ button:hover {
   font-size: 14px;
   font-family: "PT Mono", courier, monospace; }
   .form__terms input:checked ~ .checkbox-container {
-    background-image: url("../../../img/Vector.svg");
+    background-image: url("../img/Vector.svg");
     background-repeat: no-repeat;
     background-position: 50%; }
   .form__terms .checkbox-container {
@@ -1263,10 +1263,10 @@ button:hover {
   .accordeon__label {
     width: 16px;
     height: 16px;
-    background-image: url("../../../img/plus.svg"); }
+    background-image: url("../img/plus.svg"); }
   .accordeon__control:checked ~ .accordeon__label {
     height: 2px;
-    background-image: url("../../../img/minus.svg"); }
+    background-image: url("../img/minus.svg"); }
   .accordeon__control:checked ~ .accordeon__content {
     display: block; }
   .accordeon__content {
