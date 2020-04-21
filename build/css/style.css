@@ -365,6 +365,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+button:hover {
+  opacity: 0.7; }
+
 .contact-us {
   display: flex;
   align-items: center;
@@ -596,6 +599,8 @@ img {
   border-radius: 5px;
   border: none;
   background-color: #00B2FF; }
+  .main-screen__button:hover {
+    opacity: 0.7; }
 
 @media (max-width: 1023px) {
   .main-screen__button {
@@ -628,29 +633,6 @@ img {
 @media (max-width: 1023px) {
   .main-screen__scroll-down {
     display: none; } }
-
-.advantages {
-  margin: 0 auto;
-  padding-top: 113px;
-  width: 60.94%; }
-
-@media (max-width: 1023px) {
-  .advantages {
-    padding-top: 53px;
-    width: 93.5%; } }
-
-@media (max-width: 767px) {
-  .advantages {
-    padding-top: 38px;
-    width: 90.6%; } }
-
-.advantages__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
 
 .advantage {
   margin-bottom: 31px;
@@ -714,6 +696,29 @@ img {
     .advantage--confidentiality svg {
       width: 30.2px;
       height: 26.1px; } }
+
+.advantages {
+  margin: 0 auto;
+  padding-top: 113px;
+  width: 60.94%; }
+
+@media (max-width: 1023px) {
+  .advantages {
+    padding-top: 53px;
+    width: 93.5%; } }
+
+@media (max-width: 767px) {
+  .advantages {
+    padding-top: 38px;
+    width: 90.6%; } }
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 .about-company {
   margin: 75px auto 68px;
@@ -977,9 +982,14 @@ img {
     border: none;
     letter-spacing: 1.3px;
     background-color: #19baff; }
+    .form__fields input:hover, .form__fields input:focus,
+    .form__fields textarea:hover,
+    .form__fields textarea:focus {
+      outline: 2px solid #51a7f8;
+      cursor: pointer; }
     .form__fields input:focus,
     .form__fields textarea:focus {
-      outline: none; }
+      background-color: #009bde; }
   .form__fields input::-webkit-input-placeholder, .form__fields textarea::-webkit-input-placeholder {
     color: #ffffff; }
   .form__fields input::-moz-placeholder, .form__fields textarea::-moz-placeholder {
@@ -1272,6 +1282,8 @@ img {
     margin: 0;
     padding: 0;
     list-style: none; }
+  .page-footer a:hover {
+    color: #00B2FF; }
 
 .modal-overlay {
   position: fixed;

@@ -114,9 +114,16 @@
     letter-spacing: 1.3px;
     background-color: $input-background;
 
+    &:hover,
     &:focus {
-      outline: none;
+      outline: 2px solid #51a7f8;
+      cursor: pointer;
     }
+
+    &:focus {
+      background-color: #009bde;
+    }
+
   }
 
   input::placeholder,
