@@ -3,14 +3,14 @@
 }
 
 .services__wrapper {
-  margin: 0 auto;
-  padding: 70px 0 80px;
-  width: 60.93%;
+  padding: 90px 0 80px;
 
   color: $font-color-light;
 
   p {
-    margin-bottom: 70px;
+    margin: 0 auto 58px;
+    width: 61%;
+    min-width: 925px;
     font-size: 36px;
     line-height: 44px;
   }
@@ -48,13 +48,10 @@
 }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
+  text-align: center;
   list-style: none;
 
   a {
@@ -64,10 +61,10 @@
 
   span {
     display: block;
-    width: 100%;
     margin-top: -584px;
     padding: 13px 155px 0px 44px;
 
+    text-align: left;
     line-height: 30px;
   }
 
@@ -105,10 +102,16 @@
 }
 
 .services__item {
+  display: inline-block;
   margin-bottom: 46px;
+  margin-right: 26px;
   position: relative;
   width: 370px;
   min-height: 620px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   a::after {
     content: ">";

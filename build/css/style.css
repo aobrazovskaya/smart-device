@@ -651,6 +651,7 @@ button:hover {
   margin-bottom: 31px;
   padding: 40px 42px;
   width: 48.7%;
+  min-width: 400px;
   min-height: 299px;
   background-color: #ffffff;
   border: 1px solid #EBEBEB;
@@ -714,7 +715,8 @@ button:hover {
 .advantages {
   margin: 0 auto;
   padding-top: 113px;
-  width: 60.94%; }
+  width: 60.94%;
+  min-width: 975px; }
 
 @media (max-width: 1023px) {
   .advantages {
@@ -739,6 +741,7 @@ button:hover {
   padding-left: 210px;
   padding-bottom: 40px;
   width: 64%;
+  min-width: 1000px;
   color: #666666;
   background-image: url("../img/2005.png");
   background-repeat: no-repeat;
@@ -812,12 +815,12 @@ button:hover {
   background-color: #1B2D37; }
 
 .services__wrapper {
-  margin: 0 auto;
-  padding: 70px 0 80px;
-  width: 60.93%;
+  padding: 90px 0 80px;
   color: #ffffff; }
   .services__wrapper p {
-    margin-bottom: 70px;
+    margin: 0 auto 58px;
+    width: 61%;
+    min-width: 925px;
     font-size: 36px;
     line-height: 44px; }
 
@@ -844,20 +847,18 @@ button:hover {
       line-height: 40px; } }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  text-align: center;
   list-style: none; }
   .services__list a {
     font-size: 20px;
     color: #ffffff; }
   .services__list span {
     display: block;
-    width: 100%;
     margin-top: -584px;
     padding: 13px 155px 0px 44px;
+    text-align: left;
     line-height: 30px; }
   .services__list img {
     width: 370px;
@@ -880,10 +881,14 @@ button:hover {
     width: 71%; } }
 
 .services__item {
+  display: inline-block;
   margin-bottom: 46px;
+  margin-right: 26px;
   position: relative;
   width: 370px;
   min-height: 620px; }
+  .services__item:last-child {
+    margin-right: 0; }
   .services__item a::after {
     content: ">";
     display: flex;
@@ -916,7 +921,8 @@ button:hover {
   background-color: #00B2FF; }
   .form form {
     padding: 0 30px 100px 11px;
-    width: 50%; }
+    width: 50%;
+    min-width: 614px; }
 
 @media (max-width: 1023px) {
   .form {
