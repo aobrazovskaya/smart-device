@@ -456,7 +456,10 @@ button:hover {
 @media (max-width: 767px) {
   .page-header__wrapper {
     margin: 17px auto;
-    width: 90%; } }
+    width: 90%; }
+    .page-header__wrapper img {
+      width: 38px;
+      height: 38px; } }
 
 .page-header__button {
   margin: 3px 0;
