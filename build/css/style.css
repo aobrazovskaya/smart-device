@@ -327,7 +327,8 @@ template {
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  height: 100%; }
 
 *,
 *::after,
@@ -335,6 +336,9 @@ html {
   box-sizing: inherit; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 100%;
   overflow-x: hidden;
   font-size: 16px;
@@ -451,7 +455,8 @@ button:hover {
   top: 0;
   display: flex;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #1B2D37; }
 
 .page-header__wrapper {
   margin: 33px auto;
@@ -1336,6 +1341,7 @@ button:hover {
     display: none; } }
 
 .page-footer {
+  flex: 0 0 auto;
   position: relative;
   font-size: 15px;
   color: #1B2D37; }
@@ -1406,6 +1412,7 @@ button:hover {
     display: none; } }
 
 .main {
+  flex: 1 0 auto;
   background-image: url("../img/background-light-desktop.png");
   background-repeat: no-repeat;
   background-size: 125%;

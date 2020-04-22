@@ -12,6 +12,7 @@
 @import "./blocks/modal/modal.scss";
 
 .main {
+  flex: 1 0 auto;
   background-image: url('../img/background-light-desktop.png');
   background-repeat: no-repeat;
   background-size: 125%;
