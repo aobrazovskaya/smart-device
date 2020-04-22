@@ -30,6 +30,10 @@
     font-family: $secondary-font;
     color: $font-color-light;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -53,6 +57,10 @@
     background-size: 100%;
     display: inline-block;
     vertical-align: middle;
+  }
+
+  &:hover {
+    color: $main-color;
   }
 }
 

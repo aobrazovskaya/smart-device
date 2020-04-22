@@ -10,6 +10,7 @@
   h2 {
     margin-top: 0;
     font-size: inherit;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.6px;
   }
@@ -22,5 +23,6 @@
 
   a:hover {
     color: $main-color;
+    opacity: 1;
   }
 }

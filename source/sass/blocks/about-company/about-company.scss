@@ -37,6 +37,7 @@
     margin-top: 27px;
     margin-bottom: 44px;
     width: 100%;
+    min-width: 767px;
 
     background-image: url("../img/2005-medium.png");
 
@@ -58,6 +59,7 @@
     margin-bottom: 26px;
     padding-left: 15px;
     background-image: none;
+    min-width: 300px;
 
     h2 {
       padding-bottom: 30px;

@@ -210,6 +210,10 @@
   transform: rotate(0.75turn);
   color: $font-color-light;
   letter-spacing: 1.1px;
+
+  &:hover {
+    color: $main-color;
+  }
 }
 
 @media (max-width: $tablet-width) {

@@ -51,6 +51,10 @@
   font-family: $primary-font;
   color: $font-color-light;
   background-color: transparent;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $tablet-width) {

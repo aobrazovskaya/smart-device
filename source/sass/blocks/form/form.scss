@@ -28,6 +28,10 @@
 @media (max-width: $mobile-width) {
   .form {
     padding-bottom: 8px;
+
+    form {
+      min-width: 290px;
+    }
   }
 }
 

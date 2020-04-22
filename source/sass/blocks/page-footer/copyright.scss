@@ -5,7 +5,7 @@
   font-family: $secondary-font;
 
   span {
-    letter-spacing: 0.5px
+    letter-spacing: 0.5px;
   }
 }
 
@@ -15,12 +15,14 @@
   margin: 0 auto;
   padding: 19px 15px 17px 12px;
   width: 75%;
+  min-width: 1023px;
 }
 
 @media (max-width: $tablet-width) {
   .copyright__wrapper {
     padding: 23px 28px;
     width: 100%;
+    min-width: 100px;
 
     span:first-child {
       display: none;
@@ -38,5 +40,25 @@
     span:last-child {
       margin-top: 28px;
     }
+  }
+}
+
+@media (max-width: 1500px) {
+  .copyright__privacy-terms {
+    margin-left: auto;
+    margin-right: 5%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .copyright__privacy-terms {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .copyright__privacy-terms {
+    margin-left: auto;
   }
 }

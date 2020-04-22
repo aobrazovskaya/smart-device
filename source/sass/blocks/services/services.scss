@@ -3,14 +3,16 @@
 }
 
 .services__wrapper {
+  margin: 0 auto;
   padding: 90px 0 80px;
 
   color: $font-color-light;
 
   p {
-    margin: 0 auto 58px;
+    margin-left: 19.5%;
+    margin-bottom: 58px;
     width: 61%;
-    min-width: 925px;
+    min-width: 670px;
     font-size: 36px;
     line-height: 44px;
   }
@@ -20,11 +22,13 @@
   .services__wrapper {
     padding-top: 18px;
     padding-bottom: 34px;
-    width: 92.93%;
+    width: 95%;
 
     p {
+      margin-left: 0.5%;
       margin-bottom: 50px;
       width: 87%;
+      min-width: 200px;
       font-size: 32px;
     }
   }

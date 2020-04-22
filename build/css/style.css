@@ -392,6 +392,8 @@ button:hover {
   .contact-us__item a {
     font-family: "PT Mono", courier, monospace;
     color: #ffffff; }
+  .contact-us__item:hover {
+    opacity: 0.5; }
 
 @media (max-width: 1023px) {
   .contact-us__item--email {
@@ -410,6 +412,9 @@ button:hover {
     background-size: 100%;
     display: inline-block;
     vertical-align: middle; }
+  .contact-us__email:hover,
+  .contact-us__tel:hover {
+    color: #00B2FF; }
 
 .contact-us__email::before {
   margin-right: 20px;
@@ -482,6 +487,8 @@ button:hover {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   background-color: transparent; }
+  .page-header__button:hover {
+    opacity: 0.5; }
 
 @media (max-width: 1023px) {
   .page-header__button {
@@ -642,6 +649,8 @@ button:hover {
   transform: rotate(0.75turn);
   color: #ffffff;
   letter-spacing: 1.1px; }
+  .main-screen__scroll-down:hover {
+    color: #00B2FF; }
 
 @media (max-width: 1023px) {
   .main-screen__scroll-down {
@@ -683,6 +692,7 @@ button:hover {
     margin-bottom: 28px;
     padding: 23px 20px 23px 25px;
     width: 48%;
+    min-width: 345px;
     min-height: 232px; }
     .advantage h3 {
       padding-top: 12px;
@@ -700,7 +710,8 @@ button:hover {
   .advantage {
     margin-bottom: 22px;
     padding-right: 15px;
-    width: 100%; }
+    width: 100%;
+    min-width: 290px; }
     .advantage h3 {
       padding-top: 9px;
       padding-bottom: 9px;
@@ -721,12 +732,14 @@ button:hover {
 @media (max-width: 1023px) {
   .advantages {
     padding-top: 53px;
-    width: 93.5%; } }
+    width: 93.5%;
+    min-width: 700px; } }
 
 @media (max-width: 767px) {
   .advantages {
     padding-top: 38px;
-    width: 90.6%; } }
+    width: 90.6%;
+    min-width: 290px; } }
 
 .advantages__list {
   display: flex;
@@ -767,6 +780,7 @@ button:hover {
     margin-top: 27px;
     margin-bottom: 44px;
     width: 100%;
+    min-width: 767px;
     background-image: url("../img/2005-medium.png"); }
     .about-company h2 {
       padding-top: 12px;
@@ -780,7 +794,8 @@ button:hover {
     margin-top: 32px;
     margin-bottom: 26px;
     padding-left: 15px;
-    background-image: none; }
+    background-image: none;
+    min-width: 300px; }
     .about-company h2 {
       padding-bottom: 30px;
       font-size: 28px; } }
@@ -815,12 +830,14 @@ button:hover {
   background-color: #1B2D37; }
 
 .services__wrapper {
+  margin: 0 auto;
   padding: 90px 0 80px;
   color: #ffffff; }
   .services__wrapper p {
-    margin: 0 auto 58px;
+    margin-left: 19.5%;
+    margin-bottom: 58px;
     width: 61%;
-    min-width: 925px;
+    min-width: 670px;
     font-size: 36px;
     line-height: 44px; }
 
@@ -828,10 +845,12 @@ button:hover {
   .services__wrapper {
     padding-top: 18px;
     padding-bottom: 34px;
-    width: 92.93%; }
+    width: 95%; }
     .services__wrapper p {
+      margin-left: 0.5%;
       margin-bottom: 50px;
       width: 87%;
+      min-width: 200px;
       font-size: 32px; } }
 
 @media (max-width: 767px) {
@@ -936,7 +955,9 @@ button:hover {
 
 @media (max-width: 767px) {
   .form {
-    padding-bottom: 8px; } }
+    padding-bottom: 8px; }
+    .form form {
+      min-width: 290px; } }
 
 .form__wrapper {
   display: flex;
@@ -1110,20 +1131,22 @@ button:hover {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 64px 0 56px;
-  width: 75%; }
+  padding: 64px 10px 56px;
+  width: 76%;
+  min-width: 1023px; }
 
 @media (max-width: 1023px) {
   .page-footer__info {
     flex-wrap: wrap;
-    padding-top: 19px;
-    padding-bottom: 26px;
-    width: 100%; } }
+    padding: 19px 0 26px;
+    width: 100%;
+    min-width: 767px; } }
 
 @media (max-width: 767px) {
   .page-footer__info {
     padding-top: 43px;
-    padding-bottom: 0; } }
+    padding-bottom: 0;
+    min-width: 100px; } }
 
 .page-footer__col-wrapper {
   padding-left: 12px;
@@ -1168,13 +1191,15 @@ button:hover {
     margin-right: 15px; }
     .page-footer__social li:last-child {
       margin-right: 0; }
+  .page-footer__social svg:hover {
+    fill: #00B2FF; }
 
 @media (max-width: 1023px) {
   .page-footer__social {
     align-items: flex-end; } }
 
 .page-footer__sections {
-  padding-left: 40px;
+  padding-left: 3%;
   width: 45%; }
   .page-footer__sections h2 {
     margin-bottom: 27px; }
@@ -1185,6 +1210,8 @@ button:hover {
          columns: 2; }
   .page-footer__sections li {
     margin-bottom: 8px; }
+  .page-footer__sections a {
+    opacity: 0.5; }
 
 @media (max-width: 1023px) {
   .page-footer__sections {
@@ -1210,13 +1237,17 @@ button:hover {
 .page-footer__address {
   padding-left: 12px;
   width: 25%;
+  min-width: 345px;
   font-family: "PT Mono", courier, monospace; }
   .page-footer__address h2 {
     margin-bottom: 28px; }
   .page-footer__address address {
     margin-bottom: 8px;
     font-style: normal;
-    font-family: "PT Mono", courier, monospace; }
+    font-family: "PT Mono", courier, monospace;
+    opacity: 0.5; }
+  .page-footer__address p {
+    margin: 0 0 5px; }
   .page-footer__address a {
     margin-bottom: 6px;
     display: block;
@@ -1239,10 +1270,9 @@ button:hover {
     .page-footer__address h2 {
       margin-bottom: 0; }
     .page-footer__address .accordeon__content {
-      margin-top: 30px; }
-    .page-footer__address address {
+      margin-top: 30px;
       margin-bottom: 3px;
-      width: 98%;
+      width: 100%;
       line-height: 26px; } }
 
 .copyright {
@@ -1258,12 +1288,14 @@ button:hover {
   justify-content: space-between;
   margin: 0 auto;
   padding: 19px 15px 17px 12px;
-  width: 75%; }
+  width: 75%;
+  min-width: 1023px; }
 
 @media (max-width: 1023px) {
   .copyright__wrapper {
     padding: 23px 28px;
-    width: 100%; }
+    width: 100%;
+    min-width: 100px; }
     .copyright__wrapper span:first-child {
       display: none; } }
 
@@ -1275,6 +1307,20 @@ button:hover {
     padding-bottom: 31px; }
     .copyright__wrapper span:last-child {
       margin-top: 28px; } }
+
+@media (max-width: 1500px) {
+  .copyright__privacy-terms {
+    margin-left: auto;
+    margin-right: 5%; } }
+
+@media (max-width: 1023px) {
+  .copyright__privacy-terms {
+    margin-left: 0;
+    margin-right: auto; } }
+
+@media (max-width: 767px) {
+  .copyright__privacy-terms {
+    margin-left: auto; } }
 
 @media (max-width: 767px) {
   .accordeon__label {
@@ -1296,6 +1342,7 @@ button:hover {
   .page-footer h2 {
     margin-top: 0;
     font-size: inherit;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.6px; }
   .page-footer ul {
@@ -1303,7 +1350,8 @@ button:hover {
     padding: 0;
     list-style: none; }
   .page-footer a:hover {
-    color: #00B2FF; }
+    color: #00B2FF;
+    opacity: 1; }
 
 .modal-overlay {
   position: fixed;
