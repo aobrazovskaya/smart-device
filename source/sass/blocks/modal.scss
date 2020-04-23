@@ -9,10 +9,9 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: calc(50% - 303px);
+  left: calc(50% - 245px);
 
   padding: 30px 40px;
   width: 490px;
