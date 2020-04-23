@@ -504,7 +504,7 @@ button:hover {
   background-color: #1B2D37;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto; }
+  background-size: cover; }
   .main-screen h1 {
     margin: 203px 0 36px -4px;
     color: #ffffff;
@@ -836,7 +836,7 @@ button:hover {
   text-align: center;
   color: #ffffff;
   background-color: #1B2D37; }
-  .services p {
+  .services h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 58px;
@@ -849,7 +849,7 @@ button:hover {
   .services {
     padding-top: 18px;
     padding-bottom: 34px; }
-    .services p {
+    .services h2 {
       margin-bottom: 50px;
       max-width: 720px;
       font-size: 32px; } }
@@ -857,7 +857,7 @@ button:hover {
 @media (max-width: 767px) {
   .services {
     padding: 20px 15px 32px; }
-    .services p {
+    .services h2 {
       margin-bottom: 40px;
       padding-left: 10px;
       width: 100%;
@@ -872,7 +872,7 @@ button:hover {
   max-width: 1164px;
   text-align: center;
   list-style: none; }
-  .services__list span {
+  .services__list h3 {
     display: block;
     padding: 13px 155px 0px 44px;
     font-size: 20px;
@@ -883,11 +883,11 @@ button:hover {
 @media (max-width: 1023px) {
   .services__list {
     flex-wrap: wrap; }
-    .services__list span {
+    .services__list h3 {
       width: 50%; } }
 
 @media (max-width: 767px) {
-  .services__list span {
+  .services__list h3 {
     padding-left: 35px;
     padding-right: 0;
     width: 71%; } }
@@ -1270,6 +1270,7 @@ button:hover {
     align-items: center;
     padding: 28px 15px 22px;
     width: 100%;
+    min-width: 100%;
     border-top: 1px solid #626962; }
     .page-footer__address h2 {
       margin-bottom: 0; }
@@ -1368,9 +1369,9 @@ button:hover {
 
 .modal {
   position: absolute;
-  top: 13.5%;
+  top: 50%;
   left: 50%;
-  margin-left: -245px;
+  transform: translate(-50%, -50%);
   padding: 30px 40px;
   width: 490px;
   min-height: 605px;

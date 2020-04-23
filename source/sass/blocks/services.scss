@@ -6,7 +6,7 @@
   color: $font-color-light;
   background-color: $dark-background;
 
-  p {
+  h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 58px;
@@ -23,7 +23,7 @@
     padding-top: 18px;
     padding-bottom: 34px;
 
-    p {
+    h2 {
       margin-bottom: 50px;
       max-width: 720px;
       font-size: 32px;
@@ -35,7 +35,7 @@
   .services {
     padding: 20px 15px 32px;
 
-    p {
+    h2 {
       margin-bottom: 40px;
       padding-left: 10px;
       width: 100%;
@@ -55,7 +55,7 @@
   text-align: center;
   list-style: none;
 
-  span {
+  h3 {
     display: block;
     padding: 13px 155px 0px 44px;
 
@@ -70,7 +70,7 @@
   .services__list {
     flex-wrap: wrap;
 
-    span {
+    h3 {
       width: 50%;
     }
   }
@@ -78,7 +78,7 @@
 
 @media (max-width: $mobile-width) {
   .services__list {
-    span {
+    h3 {
       padding-left: 35px;
       padding-right: 0;
 

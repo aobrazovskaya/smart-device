@@ -10,10 +10,10 @@
 
 .modal {
   position: absolute;
-  top: 13.5%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 
-  margin-left: -245px;
   padding: 30px 40px;
   width: 490px;
   min-height: 605px;

@@ -3,13 +3,13 @@
 @import "./fonts.scss";
 @import "./common.scss";
 @import "./blocks/page-header/page-header.scss";
-@import "./blocks/main-screen/main-screen.scss";
+@import "./blocks/main-screen.scss";
 @import "./blocks/advantages/advantages.scss";
-@import "./blocks/about-company/about-company.scss";
-@import "./blocks/services/services.scss";
-@import "./blocks/form/form.scss";
+@import "./blocks/about-company.scss";
+@import "./blocks/services.scss";
+@import "./blocks/form.scss";
 @import "./blocks/page-footer/page-footer.scss";
-@import "./blocks/modal/modal.scss";
+@import "./blocks/modal.scss";
 
 .main {
   flex: 1 0 auto;
