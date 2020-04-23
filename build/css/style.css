@@ -873,6 +873,8 @@ button:hover {
   text-align: center;
   list-style: none; }
   .services__list h3 {
+    position: absolute;
+    z-index: 1;
     display: block;
     padding: 13px 155px 0px 44px;
     font-size: 20px;
@@ -892,28 +894,20 @@ button:hover {
     padding-right: 0;
     width: 71%; } }
 
-.services__item {
+.service {
+  position: relative;
   margin-right: 26px;
   margin-bottom: 46px;
   position: relative;
   width: 370px;
-  min-height: 620px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .services__item:last-child {
+  min-height: 620px; }
+  .service:last-child {
     margin-right: 0; }
-  .services__item--production {
-    background-image: url("../img/production.png"); }
-  .services__item--installation {
-    background-image: url("../img/installation.png"); }
-  .services__item--component-parts {
-    background-image: url("../img/component-parts.png"); }
-  .services__item a {
+  .service a {
     display: block;
     width: 100%;
     height: 100%; }
-  .services__item a::after {
+  .service a::after {
     content: ">";
     display: flex;
     justify-content: center;
@@ -921,25 +915,40 @@ button:hover {
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 2;
     width: 63px;
     height: 63px;
     color: #ffffff;
     background-color: #00B2FF; }
 
 @media (max-width: 1023px) {
-  .services__item {
+  .service {
     margin-right: auto;
     margin-left: auto;
     width: 720px;
     min-height: 256px; }
-    .services__item:last-child {
+    .service:last-child {
       margin-left: auto;
       margin-right: auto; } }
 
 @media (max-width: 767px) {
-  .services__item {
+  .service {
     min-width: 290px;
     margin-bottom: 31px; } }
+
+.service__bg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .service__bg--production {
+    background-image: url("../img/production.png"); }
+  .service__bg--installation {
+    background-image: url("../img/installation.png"); }
+  .service__bg--component-parts {
+    background-image: url("../img/component-parts.png"); }
 
 .form {
   padding-bottom: 12px;

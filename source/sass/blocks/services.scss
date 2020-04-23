@@ -56,6 +56,9 @@
   list-style: none;
 
   h3 {
+    position: absolute;
+    z-index: 1;
+
     display: block;
     padding: 13px 155px 0px 44px;
 
@@ -87,31 +90,17 @@
   }
 }
 
-.services__item {
+.service {
+  position: relative;
   margin-right: 26px;
   margin-bottom: 46px;
   position: relative;
 
   width: 370px;
   min-height: 620px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   &:last-child {
     margin-right: 0;
-  }
-
-  &--production {
-    background-image: url('../img/production.png');
-  }
-
-  &--installation {
-    background-image: url('../img/installation.png');
-  }
-
-  &--component-parts {
-    background-image: url('../img/component-parts.png');
   }
 
   a {
@@ -129,6 +118,7 @@
     right: 0;
     bottom: 0;
 
+    z-index: 2;
     width: 63px;
     height: 63px;
     color: $font-color-light;
@@ -138,7 +128,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .services__item {
+  .service {
     margin-right: auto;
     margin-left: auto;
     width: 720px;
@@ -152,8 +142,29 @@
 }
 
 @media (max-width: $mobile-width) {
-  .services__item {
+  .service {
     min-width: 290px;
     margin-bottom: 31px;
+  }
+}
+
+.service__bg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--production {
+    background-image: url('../img/production.png');
+  }
+
+  &--installation {
+    background-image: url('../img/installation.png');
+  }
+
+  &--component-parts {
+    background-image: url('../img/component-parts.png');
   }
 }
