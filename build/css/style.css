@@ -904,11 +904,15 @@ button:hover {
   .services__item:last-child {
     margin-right: 0; }
   .services__item--production {
-    background-image: url("../../../img/production.png"); }
+    background-image: url("../img/production.png"); }
   .services__item--installation {
-    background-image: url("../../../img/installation.png"); }
+    background-image: url("../img/installation.png"); }
   .services__item--component-parts {
-    background-image: url("../../../img/component-parts.png"); }
+    background-image: url("../img/component-parts.png"); }
+  .services__item a {
+    display: block;
+    width: 100%;
+    height: 100%; }
   .services__item a::after {
     content: ">";
     display: flex;

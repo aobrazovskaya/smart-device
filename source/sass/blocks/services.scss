@@ -103,15 +103,21 @@
   }
 
   &--production {
-    background-image: url('../../../img/production.png');
+    background-image: url('../img/production.png');
   }
 
   &--installation {
-    background-image: url('../../../img/installation.png');
+    background-image: url('../img/installation.png');
   }
 
   &--component-parts {
-    background-image: url('../../../img/component-parts.png');
+    background-image: url('../img/component-parts.png');
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   a::after {
