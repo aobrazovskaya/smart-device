@@ -77,22 +77,26 @@
 .main-screen__content {
   position: relative;
   margin: 0 auto;
-  padding: 118px 0 292px;
-  width: 73.6%;
+  padding: 118px 20px 292px;
+  width: 75.6%;
+  min-width: $tablet-width;
 }
 
 @media (max-width: $tablet-width) {
   .main-screen__content {
+    padding-left: 90px;
+    padding-right: 90px;
     padding-bottom: 182px;
-    width: 76%;
+    width: 100%;
+    min-width: $mobile-width;
   }
 }
 
 @media (max-width: $mobile-width) {
   .main-screen__content {
-    padding-top: 78px;
-    padding-bottom: 88px;
+    padding: 78px 0 88px;
     width: 92%;
+    min-width: 100px;
   }
 }
 
@@ -206,7 +210,7 @@
 .main-screen__scroll-down {
   position: absolute;
   top: 735px;
-  left: 11.1%;
+  left: -20px;
   transform: rotate(0.75turn);
   color: $font-color-light;
   letter-spacing: 1.1px;

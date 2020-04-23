@@ -10,23 +10,28 @@
 
 .page-header__wrapper {
   margin: 33px auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
 
-  width: 73.49%;
+  width: 75.5%;
+  min-width: $tablet-width;
 }
 
 @media (max-width: $tablet-width) {
   .page-header__wrapper {
     margin: 20px auto;
     width: 93.5%;
+    min-width: $mobile-width;
   }
 }
 
 @media (max-width: $mobile-width) {
   .page-header__wrapper {
     margin: 17px auto;
+    padding: 0;
     width: 90%;
+    min-width: 100px;
 
     img {
       width: 38px;
