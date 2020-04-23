@@ -459,19 +459,24 @@ button:hover {
 
 .page-header__wrapper {
   margin: 33px auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  width: 73.49%; }
+  width: 75.5%;
+  min-width: 1023px; }
 
 @media (max-width: 1023px) {
   .page-header__wrapper {
     margin: 20px auto;
-    width: 93.5%; } }
+    width: 93.5%;
+    min-width: 767px; } }
 
 @media (max-width: 767px) {
   .page-header__wrapper {
     margin: 17px auto;
-    width: 90%; }
+    padding: 0;
+    width: 90%;
+    min-width: 100px; }
     .page-header__wrapper img {
       width: 38px;
       height: 38px; } }
@@ -556,19 +561,23 @@ button:hover {
 .main-screen__content {
   position: relative;
   margin: 0 auto;
-  padding: 118px 0 292px;
-  width: 73.6%; }
+  padding: 118px 20px 292px;
+  width: 75.6%;
+  min-width: 1023px; }
 
 @media (max-width: 1023px) {
   .main-screen__content {
+    padding-left: 90px;
+    padding-right: 90px;
     padding-bottom: 182px;
-    width: 76%; } }
+    width: 100%;
+    min-width: 767px; } }
 
 @media (max-width: 767px) {
   .main-screen__content {
-    padding-top: 78px;
-    padding-bottom: 88px;
-    width: 92%; } }
+    padding: 78px 0 88px;
+    width: 92%;
+    min-width: 100px; } }
 
 .main-screen__text {
   position: relative;
@@ -649,7 +658,7 @@ button:hover {
 .main-screen__scroll-down {
   position: absolute;
   top: 735px;
-  left: 11.1%;
+  left: -20px;
   transform: rotate(0.75turn);
   color: #ffffff;
   letter-spacing: 1.1px; }
@@ -782,7 +791,8 @@ button:hover {
 @media (max-width: 1023px) {
   .about-company {
     margin-top: 27px;
-    margin-bottom: 44px;
+    margin-bottom: 3px;
+    padding-bottom: 80px;
     width: 100%;
     min-width: 767px;
     background-image: url("../img/2005-medium.png"); }
@@ -796,7 +806,7 @@ button:hover {
 @media (max-width: 767px) {
   .about-company {
     margin-top: 32px;
-    margin-bottom: 26px;
+    margin-bottom: 48px;
     padding-left: 15px;
     background-image: none;
     min-width: 300px; }
@@ -832,7 +842,7 @@ button:hover {
 
 .services {
   margin: 0 auto;
-  padding: 90px 10px 80px;
+  padding: 65px 10px 80px;
   text-align: center;
   color: #ffffff;
   background-color: #1B2D37; }
@@ -876,7 +886,7 @@ button:hover {
     position: absolute;
     z-index: 1;
     display: block;
-    padding: 13px 155px 0px 44px;
+    padding: 26px 155px 0 40px;
     font-size: 20px;
     color: #ffffff;
     text-align: left;
@@ -954,11 +964,12 @@ button:hover {
   padding-bottom: 12px;
   color: #ffffff;
   background-image: url("../img/form.png");
-  background-color: #00B2FF; }
+  background-color: #00B2FF;
+  background-position: right; }
   .form form {
+    margin-right: 18%;
     padding: 0 30px 100px 11px;
-    width: 50%;
-    min-width: 614px; }
+    width: 614px; }
 
 @media (max-width: 1023px) {
   .form {
@@ -966,14 +977,15 @@ button:hover {
     background-color: #00B2FF;
     background-image: none; }
     .form form {
+      margin-right: 0;
       padding-right: 10px;
-      padding-bottom: 32px;
-      width: 100%; } }
+      padding-bottom: 32px; } }
 
 @media (max-width: 767px) {
   .form {
     padding-bottom: 8px; }
     .form form {
+      width: 100%;
       min-width: 290px; } }
 
 .form__wrapper {
@@ -981,10 +993,10 @@ button:hover {
   flex-direction: column;
   align-items: flex-end;
   margin: 0 auto;
-  width: 64%;
+  width: 100%;
   padding-top: 95px;
   background-image: url("../img/paper_airplane_3d_model_obj_blend_16ec3a53-a93c-4854-8f34-5481fc9139d1.png");
-  background-position: top 163px left;
+  background-position: top 163px right 1060px;
   background-repeat: no-repeat; }
   .form__wrapper p {
     margin: 0; }
@@ -1176,7 +1188,8 @@ button:hover {
     bottom: 17px;
     font-family: "PT Mono", courier, monospace;
     font-size: 13px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    opacity: 0.5; }
 
 @media (max-width: 1023px) {
   .page-footer__col-wrapper {
@@ -1299,7 +1312,8 @@ button:hover {
   font-size: 13px;
   font-family: "PT Mono", courier, monospace; }
   .copyright span {
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    opacity: 0.5; }
 
 .copyright__wrapper {
   display: flex;
@@ -1381,10 +1395,9 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: calc(50% - 303px);
+  left: calc(50% - 245px);
   padding: 30px 40px;
   width: 490px;
   min-height: 605px;
