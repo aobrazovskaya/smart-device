@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
-    "browser-sync": "2.26.x",
+    "browser-sync": "2.27.x",
     "del": "^5.1.0",
     "gulp": "4.0.x",
     "gulp-concat": "^2.6.1",
